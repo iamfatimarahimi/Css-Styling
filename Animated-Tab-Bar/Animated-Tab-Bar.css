@@ -97,3 +97,7 @@ body{
     background-color: var(--bgColorMenu);
     transition: transform var(--timeOut , var(--duration));
 }
+.svg-container{
+    width: 0;
+    height: 0;
+}
