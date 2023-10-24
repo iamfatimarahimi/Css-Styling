@@ -57,3 +57,43 @@ body{
     transition: background-color var(--duration),
         transform var(--duration);
 }
+.menu__item.active{
+    transform: 
+    translate3d(0,-.8em , 0);
+}
+.menu__item.active::before{
+     transform: scale(1);
+    background-color: var(--bgColorItem);
+}
+.icon{
+    width: 2.6em;
+    height: 2.6em;
+    stroke: white;
+    fill: transparent;
+    stroke-width: 1pt;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 400;
+}
+.menu__item.active .icon{
+    animation: strok 1.5s reverse;
+}
+@keyframes strok{
+100% {
+
+        stroke-dashoffset: 400;
+
+    }
+}
+.menu__border{
+    left: 0;
+    bottom: 99%;
+    width: 10.9em;
+    height: 2.4em;
+    position: absolute;
+    clip-path: url(#menu);
+    will-change: transform;
+    background-color: var(--bgColorMenu);
+    transition: transform var(--timeOut , var(--duration));
+}
