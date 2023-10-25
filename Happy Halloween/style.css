@@ -59,3 +59,44 @@ body{
     cursor: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/c0860373-721d-47e1-acfa-f792c86579d2) ,auto;
 
 }
+.blog::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to top, transparent, #160c1f);
+    z-index: 999;
+}
+.blog h3{
+    position: relative;
+    font-family: "Creepster" , cursive;
+    font-size: 3rem;
+    color: rgba(225, 98, 63, 0.9);
+    letter-spacing: 0.3rem;
+    margin: 0 0 70px;
+    text-align: center;
+}
+.blog h3::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100px;
+    left: 0;
+    height: 7px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,
+            transparent,
+            rgba(253, 182, 87, 1),
+            rgba(222, 117, 89, 1),
+            rgba(117, 43, 91, 1),
+            rgba(46, 24, 71, 1),
+            transparent,
+            transparent,
+            transparent,
+            transparent,
+            transparent);
+    background-size: 200% 100%;
+  animation: line-animation 5s infinite linear;        
+}
