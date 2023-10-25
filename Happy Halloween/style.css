@@ -109,3 +109,28 @@ body{
             background-position: -100%;
         }
 }
+.blog p{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 50px 0 0 ;
+    max-width: 750px;
+    text-align: center;
+}
+/* Swiper */
+.swiper{
+    width: 70%;
+    height: 100%;
+    background: transparent;
+    border-radius: 30px;
+    cursor: grab;
+    margin-bottom: 80px;
+}
+.swiper-slide{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    gap: 30px;
+    color: #fff;
+    padding: 40px 40px;
+}
