@@ -158,3 +158,8 @@ body{
     right: 0;
     bottom: 0;
 }
+.swiper-slide .title:before{
+    color: #00ffff;
+    z-index: -1;
+    animation: glitchy 0.8s ease 0.8s infinite;
+}
