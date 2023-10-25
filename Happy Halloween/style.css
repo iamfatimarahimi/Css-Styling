@@ -134,3 +134,27 @@ body{
     color: #fff;
     padding: 40px 40px;
 }
+.parallax-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background: rgb(253, 182, 87);
+    background: linear-gradient(318deg,
+                rgba(253, 182, 87, 1) 4%,
+                rgba(222, 117, 89, 1) 25%,
+                rgba(117, 43, 91, 1) 53%,
+                rgba(46, 24, 71, 1) 81%);
+}
+.swiper-slide .title:before,
+.swiper-slide .title:after{
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
