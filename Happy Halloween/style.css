@@ -98,5 +98,14 @@ body{
             transparent,
             transparent);
     background-size: 200% 100%;
-  animation: line-animation 5s infinite linear;        
+    animation: line-animation 5s infinite linear;        
+}
+@keyframes line-animation{
+        from {
+            background-position: 100%;
+        }
+    
+        to {
+            background-position: -100%;
+        }
 }
