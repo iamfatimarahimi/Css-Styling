@@ -4,24 +4,28 @@ gsap.from("#leftside", {
   },
   x: -100,
 });
+
 gsap.from("#rightside", {
   scrollTrigger: {
     scrub: true,
   },
   x: 100,
 });
+
 gsap.from("#leftpumpkin", {
   scrollTrigger: {
     scrub: true,
   },
   x: -150,
 });
+
 gsap.from("#rightpumpkin", {
   scrollTrigger: {
     scrub: true,
   },
   x: 150,
 });
+
 var swiper = new Swiper(".swiper", {
   speed: 700,
   enabled: true,
