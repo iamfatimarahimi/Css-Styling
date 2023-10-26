@@ -189,3 +189,17 @@ body{
             transform: translate(-2px, 2px);
         }
 }
+.swiper-slide .text>p{
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 1.4;
+}
+.swiper-slide .image>img{
+    max-width: 100%;
+    width: 350px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+.swiper-slide .image>img:hover{
+    mix-blend-mode: hard-light;
+}
