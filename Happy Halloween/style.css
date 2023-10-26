@@ -247,3 +247,70 @@ body{
             filter: hue-rotate(360deg);
         }
 }
+/* BUTTON */
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+::before,
+::after{
+    position: absolute;
+    content: "";
+
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: navajowhite;
+    cursor: pointer;
+    color: #fff;
+    margin: 30px 25px 20px;
+    min-width: 120px;
+    border-bottom: 2px solid #fff;
+}
+.btn span{
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 20px;
+    transition: 0.3s;
+
+}
+.btn::before,
+.btn::after{
+    bottom: 0;
+    transition: width 0.2s 0.35s ease-out;
+}
+.btn::before{
+    right: 50%;
+}
+.btn::after {
+    left: 50%;
+}
+.btn:hover::before,
+.btn:hover::after{
+    width: 50%;
+    transition: width 0.2s ease-in;
+}
+.btn span::before,
+.btn span::after{
+    width: 0%;
+    height: 0%;
+    background: transparent;
+    opacity: 0;
+    z-index: 2;
+    transition: width 0.2s ease-in,
+    height 0.15s 0.2s linear,
+    opacity 0s 0.35s;
+}
