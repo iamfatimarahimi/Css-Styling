@@ -163,3 +163,8 @@ body{
     z-index: -1;
     animation: glitchy 0.8s ease 0.8s infinite;
 }
+.swiper-slide .title:after{
+    color: #ff00ff;
+    z-index: -2;
+    animation: glitchy 0.8s ease infinite reverse;
+}
