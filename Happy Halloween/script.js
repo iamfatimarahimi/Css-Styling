@@ -16,3 +16,9 @@ gsap.from("#leftpumpkin", {
   },
   x: -150,
 });
+gsap.from("#rightpumpkin", {
+  scrollTrigger: {
+    scrub: true,
+  },
+  x: 150,
+});
