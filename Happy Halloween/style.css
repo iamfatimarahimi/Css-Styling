@@ -168,3 +168,24 @@ body{
     z-index: -2;
     animation: glitchy 0.8s ease infinite reverse;
 }
+@keyframes glitchy{
+    0% {
+            transform: translate(-2px, 2px);
+        }
+    
+        25% {
+            transform: translate(-2px, -2px);
+        }
+    
+        50% {
+            transform: translate(2px, 2px);
+        }
+    
+        75% {
+            transform: translate(2px, -2px);
+        }
+    
+        100% {
+            transform: translate(-2px, 2px);
+        }
+}
