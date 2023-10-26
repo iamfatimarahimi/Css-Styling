@@ -22,3 +22,12 @@ gsap.from("#rightpumpkin", {
   },
   x: 150,
 });
+var swiper = new Swiper(".swiper", {
+  speed: 700,
+  enabled: true,
+  parallax: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
