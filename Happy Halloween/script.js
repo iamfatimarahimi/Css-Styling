@@ -10,3 +10,9 @@ gsap.from("#rightside", {
   },
   x: 100,
 });
+gsap.from("#leftpumpkin", {
+  scrollTrigger: {
+    scrub: true,
+  },
+  x: -150,
+});
