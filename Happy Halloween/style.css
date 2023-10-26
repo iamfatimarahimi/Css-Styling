@@ -314,3 +314,25 @@ body{
     height 0.15s 0.2s linear,
     opacity 0s 0.35s;
 }
+.btn span::before{
+    bottom: 0;
+    left: 0;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+.btn span::after{
+    bottom: 0;
+    right: 0;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.btn span:hover::before,
+.btn span:hover::after{
+    width: 50%;
+    height: 96%;
+    opacity: 1;
+    transition: 
+        height 0.2s 0.2s ease-in,
+        width 0.2s 0.4s linear,
+        opacity 0s 0.2s;
+}
