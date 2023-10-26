@@ -336,3 +336,45 @@ body{
         width 0.2s 0.4s linear,
         opacity 0s 0.2s;
 }
+/* MEDIA QUERIES */
+@media (max-width: 1150px) {
+    .blog{
+        padding: 70px 90px 70px;
+
+    }
+    .swiper{
+        width: 90%;
+        height: 60%;
+    }
+    .swiper-slide .title{
+        font-size: 2rem;
+        margin-bottom: 0.1rem;
+    }
+    .swiper-slide .text >p{
+        font-size: 1rem;
+    }
+}
+@media(max-width:990px){
+    .blog{
+        padding: 20px 90px 70px;
+    }
+    .swiper{
+        width: 90%;
+        height: 60%;
+    }
+    .swiper-slide .title{
+        font-size: 1.5rem;
+        margin-bottom: 0.1rem;
+    }
+    .swiper-slide .text>p{
+        font-size: 0.9rem;
+    }
+    .blog h3{
+        font-size: 2rem;
+        margin: 60px 0 70px;
+    }
+    .blog h3::after{
+        height: 5px;
+        border-radius: 5px;
+    }
+}
